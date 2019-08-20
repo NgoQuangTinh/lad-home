@@ -1,0 +1,25 @@
+package package_name; 
+  
+public class Account { 
+    public void methodAccount() { 
+        System.out.println("Hello there its Account"); 
+    } 
+} 
+package package_one; 
+  
+public class Customer { 
+    public void methodCustomer(){ 
+        System.out.println("Hello there i am Customer"); 
+    }     
+} 
+import package_one.Customer; 
+import package_name.Account; 
+  
+public class Banker { 
+    public static void main(String[] args){ 
+        ClassTwo a = new Customer(); 
+        ClassOne b = new Account(); 
+        a.methodClassTwo(); 
+        b.methodClassOne(); 
+    } 
+} 
